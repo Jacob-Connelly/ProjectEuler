@@ -1,0 +1,1 @@
+﻿// This is the solution for https://projecteuler.net/problem=1
