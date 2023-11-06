@@ -14,7 +14,6 @@ long GetLargestPrimeFactor(long value)
 {
     for (long i = value - 1; i != 0; i--)
     {
-        Console.WriteLine(i);
         if (IsPrime(i) && value % i == 0)
         {
             return i;
