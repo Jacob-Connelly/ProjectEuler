@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvenFibonacciNumber", "Even
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestPrimeFactor", "LargestPrimeFactor\LargestPrimeFactor.csproj", "{42601BCA-5820-44E4-9412-097AE482EC64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestPalindromeProduct", "LargestPalindromeProduct\LargestPalindromeProduct.csproj", "{95E15C6A-AE55-49BC-BE6D-74EF82064352}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{42601BCA-5820-44E4-9412-097AE482EC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42601BCA-5820-44E4-9412-097AE482EC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42601BCA-5820-44E4-9412-097AE482EC64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E15C6A-AE55-49BC-BE6D-74EF82064352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E15C6A-AE55-49BC-BE6D-74EF82064352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E15C6A-AE55-49BC-BE6D-74EF82064352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E15C6A-AE55-49BC-BE6D-74EF82064352}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
