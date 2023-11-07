@@ -6,8 +6,7 @@ int GetLargestExponential()
 {
     int currentLine = 1;
     int largestExponentialLine = 0;
-    int expBase = 0;
-    int exp = 0;
+    double prevLargest = 0;
 
     using (StreamReader sr = File.OpenText("base_exp.txt"))
     {
@@ -19,44 +18,17 @@ int GetLargestExponential()
             int currentExpBase = int.Parse(splitLine[0]);
             int currentExp = int.Parse(splitLine[1]);
 
-            if (currentLine == 1)
-            {
-                expBase = currentExpBase;
-                exp = currentExp;
-                currentLine++;
-                continue;
-            }
+            double currentLineVal = currentExp * Math.Log10(currentExpBase);
 
-            int gcd = GreatestCommonDivisor(exp, currentExp);
-
-            if (Math.Pow(currentExpBase, currentExp / gcd) > Math.Pow(expBase, exp / gcd))
+            if (currentLineVal > prevLargest)
             {
                 largestExponentialLine = currentLine;
+                prevLargest = currentLineVal;
             }
 
-            expBase = currentExpBase;
-            exp = currentExp;
             currentLine++;
         }
     }
 
     return largestExponentialLine;
-}
-
-// Euclidean algorithm
-int GreatestCommonDivisor(int a, int b)
-{
-    while (a != 0 && b != 0)
-    {
-        if (a > b)
-        {
-            a %= b;
-        }
-        else
-        {
-            b %= a;
-        }
-    }
-
-    return a | b;
 }
