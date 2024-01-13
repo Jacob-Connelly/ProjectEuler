@@ -31,6 +31,7 @@ public static class MatrixHelper
                 }
 
                 matrix.Add(row.ToArray());
+                line = sr.ReadLine();
             }
         }
         catch (Exception ex)
