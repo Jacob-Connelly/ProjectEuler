@@ -1,48 +1,37 @@
 ﻿// Solution to https://projecteuler.net/problem=3
-// Techincally this approach will work but could take millenums to finish depending on what number is used
-// Thus I have not completed this problem.
 
 long value = 600851475143;
+//long value = 13195;
 
 long answer = GetLargestPrimeFactor(value);
 
 Console.WriteLine($"Largest prime factor of {value} is {answer}");
 
-//Console.WriteLine(IsPrime(35));
-
-long GetLargestPrimeFactor(long value)
+long GetLargestPrimeFactor(long n)
 {
-    for (long i = value - 1; i != 0; i--)
+    long maxPrime = -1;
+
+    // Print the number of 2s
+    // that divide n
+    while (n % 2 == 0)
     {
-        if (IsPrime(i) && value % i == 0)
+        maxPrime = 2;
+        n /= 2;
+    }
+
+    for (int i = 3; i <= Math.Sqrt(n); i += 2)
+    {
+        while (n % i == 0)
         {
-            return i;
+            maxPrime = i;
+            n /= i;
         }
     }
 
-    return -1;
-}
+    // This condition is to handle the case
+    // when n is a prime number greater than 2
+    if (n > 2)
+        maxPrime = n;
 
-bool IsPrime(long value)
-{
-    if (value < 0 || value% 2 == 0)
-    {
-        return false;
-    }
-    else if (value == 2)
-    {
-        return true;
-    }
-
-    var boundary = Math.Floor(Math.Sqrt(value));
-
-    for (int i = 3; i <= boundary; i += 2)
-    {
-        if (value % i == 0)
-        {
-            return false;
-        }
-    }
-
-    return true;
+    return maxPrime;
 }
