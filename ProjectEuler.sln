@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathSumTwoWays", "PathSumTw
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LargestProductInASeries", "LargestProductInASeries\LargestProductInASeries.csproj", "{C32CDED2-9184-400A-A665-CCDE36B59BDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestProductInAGrid", "LargestProductInAGrid\LargestProductInAGrid.csproj", "{C33F1300-4198-45A9-A983-051848F6A5C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LargestProductInAGrid", "LargestProductInAGrid\LargestProductInAGrid.csproj", "{C33F1300-4198-45A9-A983-051848F6A5C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{21DF19E6-397A-42F5-8CBD-990465FCAFC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{21DF19E6-397A-42F5-8CBD-990465FCAFC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenThousandFirstPrime", "TenThousandFirstPrime\TenThousandFirstPrime.csproj", "{959F1473-C640-4235-8F42-B41B1A4D74DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{21DF19E6-397A-42F5-8CBD-990465FCAFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21DF19E6-397A-42F5-8CBD-990465FCAFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21DF19E6-397A-42F5-8CBD-990465FCAFC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{959F1473-C640-4235-8F42-B41B1A4D74DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{959F1473-C640-4235-8F42-B41B1A4D74DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{959F1473-C640-4235-8F42-B41B1A4D74DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{959F1473-C640-4235-8F42-B41B1A4D74DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
